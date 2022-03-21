@@ -30,6 +30,26 @@ Workflows help you increase the speed of your software development through faste
 ## Overview
 {: #overview }
 
+{% capture content %} 
+
+Create a repository called “hello-world” in GitHub or
+Bitbucket. Then in the left-hand menu, select <a href="">Projects</a>. Find the repository,
+and click Set Up Project. Don’t see your repository? Use the org selector in the
+top left corner to find the correct organization.
+{% endcapture %}
+
+
+{%- capture select_proj_img -%}
+  {{site.baseurl}}/assets/img/docs/quickstart_guide/organization-entry-point-1.png
+{%- endcapture -%}
+
+{% include two-up.html 
+     title="1. Select a Project" 
+     content=content 
+     imageURL=select_proj_img
+     imageAlt="Screenshot-1" 
+%} 
+
 A **workflow** is a set of rules for defining a collection of jobs and their run order. Workflows support complex job orchestration using a simple set of configuration keys to help you resolve failures sooner.
 
 With workflows, you can:
