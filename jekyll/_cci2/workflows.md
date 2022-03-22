@@ -50,6 +50,13 @@ top left corner to find the correct organization.
      imageAlt="Screenshot-1" 
 %} 
 
+{% include two-up.html 
+     title="1. Select a Project" 
+     content=content 
+     imageURL=select_proj_img
+     imageAlt="Screenshot-1" 
+%} 
+
 A **workflow** is a set of rules for defining a collection of jobs and their run order. Workflows support complex job orchestration using a simple set of configuration keys to help you resolve failures sooner.
 
 With workflows, you can:
