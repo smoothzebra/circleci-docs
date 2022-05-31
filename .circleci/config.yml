@@ -24,3 +24,16 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+orbs:
+  slack: circleci/slack@4.4.4
+  jobs:
+  example-job:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - slack/notify
+workflows:
+  example-workflow:
+    jobs:
+      - example-job
